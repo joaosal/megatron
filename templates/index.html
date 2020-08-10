@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>LED CONTROL</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="author" content="Joao Salcedo" />
+	<!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+	<!-- FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:600|Teko:500" rel="stylesheet">
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-sm bg-dark navbar-dark d-flex justify-content-between">
+          <div class="p-2"><a class="navbar-brand" href="#"> Porteria </a></div> 
+            <div class="p-2"><span id="subtitle">Controlling a Door</span></div>
+        </nav>
+        <div class="container">
+	   <form method='POST'>
+            <div class="row">
+                <div class="col">
+                    <button type="submit" class="btn btn-block btn-info" name="turnOnBtn" value="turnOnBtn">Turn On</button>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-block btn-danger" name="turnOffBtn" value="turnOffBtn">Turn Off</button>
+                </div>
+            </div>
+	    </form>
+        </div>
+</body>
+
+</html>
